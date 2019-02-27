@@ -71,6 +71,7 @@ namespace UdemyWinFormsApp1
             try
             {
                 arcScaleComponent1.Value = 0;
+                panGaugeHolder.Visible = false;
             }
             catch (Exception)
             {
