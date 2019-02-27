@@ -252,5 +252,11 @@ licenses.licx
 
 config.dat
 
-App.config
+*.txt
+*.cache
+*.exe
+*.pdb
+*.suo
+
+
 
