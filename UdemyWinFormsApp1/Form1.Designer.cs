@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGauges.Core.Model.ArcScaleRange arcScaleRange1 = new DevExpress.XtraGauges.Core.Model.ArcScaleRange();
-            DevExpress.XtraGauges.Core.Model.ArcScaleRange arcScaleRange2 = new DevExpress.XtraGauges.Core.Model.ArcScaleRange();
-            DevExpress.XtraGauges.Core.Model.ArcScaleRange arcScaleRange3 = new DevExpress.XtraGauges.Core.Model.ArcScaleRange();
+            DevExpress.XtraGauges.Core.Model.ArcScaleRange arcScaleRange7 = new DevExpress.XtraGauges.Core.Model.ArcScaleRange();
+            DevExpress.XtraGauges.Core.Model.ArcScaleRange arcScaleRange8 = new DevExpress.XtraGauges.Core.Model.ArcScaleRange();
+            DevExpress.XtraGauges.Core.Model.ArcScaleRange arcScaleRange9 = new DevExpress.XtraGauges.Core.Model.ArcScaleRange();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gaugeControl1 = new DevExpress.XtraGauges.Win.GaugeControl();
             this.circularGauge4 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
@@ -41,6 +41,7 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.trackBarControl1 = new DevExpress.XtraEditors.TrackBarControl();
             this.panGaugeHolder = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).BeginInit();
@@ -54,10 +55,10 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(249, 120);
+            this.simpleButton1.Location = new System.Drawing.Point(34, 32);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(106, 55);
+            this.simpleButton1.Size = new System.Drawing.Size(112, 31);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -111,30 +112,30 @@
             this.arcScaleComponent1.Name = "scale1";
             this.arcScaleComponent1.RadiusX = 85F;
             this.arcScaleComponent1.RadiusY = 85F;
-            arcScaleRange1.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#059272");
-            arcScaleRange1.EndThickness = 14F;
-            arcScaleRange1.EndValue = 33F;
-            arcScaleRange1.Name = "Range0";
-            arcScaleRange1.ShapeOffset = 14F;
-            arcScaleRange1.StartThickness = 14F;
-            arcScaleRange2.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#CDB864");
-            arcScaleRange2.EndThickness = 14F;
-            arcScaleRange2.EndValue = 66F;
-            arcScaleRange2.Name = "Range1";
-            arcScaleRange2.ShapeOffset = 14F;
-            arcScaleRange2.StartThickness = 14F;
-            arcScaleRange2.StartValue = 33F;
-            arcScaleRange3.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#933F6F");
-            arcScaleRange3.EndThickness = 14F;
-            arcScaleRange3.EndValue = 100F;
-            arcScaleRange3.Name = "Range2";
-            arcScaleRange3.ShapeOffset = 14F;
-            arcScaleRange3.StartThickness = 14F;
-            arcScaleRange3.StartValue = 66F;
+            arcScaleRange7.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#059272");
+            arcScaleRange7.EndThickness = 14F;
+            arcScaleRange7.EndValue = 33F;
+            arcScaleRange7.Name = "Range0";
+            arcScaleRange7.ShapeOffset = 14F;
+            arcScaleRange7.StartThickness = 14F;
+            arcScaleRange8.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#CDB864");
+            arcScaleRange8.EndThickness = 14F;
+            arcScaleRange8.EndValue = 66F;
+            arcScaleRange8.Name = "Range1";
+            arcScaleRange8.ShapeOffset = 14F;
+            arcScaleRange8.StartThickness = 14F;
+            arcScaleRange8.StartValue = 33F;
+            arcScaleRange9.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#933F6F");
+            arcScaleRange9.EndThickness = 14F;
+            arcScaleRange9.EndValue = 100F;
+            arcScaleRange9.Name = "Range2";
+            arcScaleRange9.ShapeOffset = 14F;
+            arcScaleRange9.StartThickness = 14F;
+            arcScaleRange9.StartValue = 66F;
             this.arcScaleComponent1.Ranges.AddRange(new DevExpress.XtraGauges.Core.Model.IRange[] {
-            arcScaleRange1,
-            arcScaleRange2,
-            arcScaleRange3});
+            arcScaleRange7,
+            arcScaleRange8,
+            arcScaleRange9});
             this.arcScaleComponent1.StartAngle = -240F;
             this.arcScaleComponent1.Value = 80F;
             // 
@@ -178,20 +179,30 @@
             // panGaugeHolder
             // 
             this.panGaugeHolder.Controls.Add(this.gaugeControl1);
+            this.panGaugeHolder.Controls.Add(this.simpleButton1);
             this.panGaugeHolder.Controls.Add(this.simpleButton2);
             this.panGaugeHolder.Controls.Add(this.trackBarControl1);
-            this.panGaugeHolder.Location = new System.Drawing.Point(732, 368);
+            this.panGaugeHolder.Location = new System.Drawing.Point(670, 363);
             this.panGaugeHolder.Name = "panGaugeHolder";
-            this.panGaugeHolder.Size = new System.Drawing.Size(61, 74);
+            this.panGaugeHolder.Size = new System.Drawing.Size(123, 79);
             this.panGaugeHolder.TabIndex = 4;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(193, 148);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(101, 59);
+            this.simpleButton3.TabIndex = 5;
+            this.simpleButton3.Text = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 495);
+            this.ClientSize = new System.Drawing.Size(517, 374);
+            this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.panGaugeHolder);
-            this.Controls.Add(this.simpleButton1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -222,6 +233,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.TrackBarControl trackBarControl1;
         private DevExpress.XtraEditors.PanelControl panGaugeHolder;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }
 

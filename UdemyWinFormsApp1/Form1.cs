@@ -39,6 +39,7 @@ namespace UdemyWinFormsApp1
 
         }
 
+        #region prevCode
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             try
@@ -65,7 +66,6 @@ namespace UdemyWinFormsApp1
             }
         }
 
-        #region gaugeTest
         private void InitialSetup()
         {
             try
@@ -109,5 +109,50 @@ namespace UdemyWinFormsApp1
             }
         }
         #endregion
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Employee e1 = new Employee();
+                e1.FirstName = "Mark";
+                e1.LastName = "Long";
+                e1.Seniority = 5;
+
+                string p = e1.Promote();
+
+                Employee e2 = new Employee();
+                e1.FirstName = "Alice";
+                e1.LastName = "Jones";
+                e1.Seniority = 5;
+
+                string p2 = e2.AnnualReview();
+
+                MessageBox.Show(p);
+                MessageBox.Show(p2);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public class Employee
+        {
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public int Seniority { get; set; }
+
+            public string Promote()
+            {
+                return FirstName + " " + LastName + " has been promoted.";
+            }
+
+            public string AnnualReview()
+            {
+                return "Annual Review completed.";
+            }
+        }
     }
 }
