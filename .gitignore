@@ -249,7 +249,7 @@ sql/
 
 licenses.licx
 *.csproj
-
+app.config
 config.dat
 
 *.txt
