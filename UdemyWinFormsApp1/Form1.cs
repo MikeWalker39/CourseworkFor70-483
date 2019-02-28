@@ -108,7 +108,6 @@ namespace UdemyWinFormsApp1
                 throw;
             }
         }
-        #endregion
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
@@ -154,5 +153,7 @@ namespace UdemyWinFormsApp1
                 return "Annual Review completed.";
             }
         }
+        #endregion
+
     }
 }
